@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>القرآن الكريم - برواية ورش</title>
+    <link href="https://fonts.googleapis.com/css2?family=Amiri&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>القرآن الكريم - برواية ورش</h1>
+            <div class="navigation">
+                <button id="prev-button" class="page-button">السابق</button>
+                <button id="next-button" class="page-button">التالي</button>
+                <div class="search-container">
+                    <input type="text" id="search-surah" class="search-input" placeholder="بحث عن السورة (الاسم أو الرقم)">
+                    <input type="text" id="search-word" class="search-input" placeholder="بحث عن الكلمة أو الآية">
+                </div>
+                <!-- Surah Dropdown Selection -->
+                <select id="surah-select" class="select-surah">
+                    <option value="">اختر سورة لقراءتها</option>
+                </select>
+                <!-- Navigation by page or Surah -->
+                <div class="page-navigation">
+                    <input type="number" id="page-input" placeholder="ادخل رقم الصفحة" />
+                    <button id="go-to-page">اذهب</button>
+                    <input type="number" id="surah-input" placeholder="رقم السورة" />
+                    <button id="go-to-surah">اذهب للسورة</button>
+                </div>
+                <!-- Font Size Controls -->
+                <div class="font-size-controls">
+                    <button id="decrease-font">أصغر</button>
+                    <button id="increase-font">أكبر</button>
+                </div>
+            </div>
+            <div id="progress-bar" class="progress-bar">
+                <div id="progress-fill"></div>
+            </div>
+        </header>
+        <div id="quran-book">
+            <div id="page-left" class="page">
+                <!-- Content for the left page will go here -->
+            </div>
+            <div id="page-right" class="page">
+                <!-- Content for the right page will go here -->
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

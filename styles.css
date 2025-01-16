@@ -1,0 +1,542 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Amiri', serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    direction: rtl; /* Right-to-left text direction */
+    text-align: right; /* Align text to the right */
+}
+
+.container {
+    position: relative;
+    width: 90%;
+    height: 85vh;
+    background-color: #fff;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+header {
+    background-color: #0056b3;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    font-size: 24px;
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.search-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.search-input {
+    padding: 8px;
+    margin: 5px 0;
+    font-size: 16px;
+    width: 100%;
+    max-width: 300px;
+}
+
+.page-button {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.page-button:hover {
+    background-color: #0056b3;
+}
+
+.progress-bar {
+    width: 50%;
+    height: 10px;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+#progress-fill {
+    width: 0;
+    height: 100%;
+    background-color: #007BFF;
+    transition: width 0.5s;
+}
+
+#quran-book {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    margin: 20px 0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Amiri', serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    direction: rtl; /* Right-to-left text direction */
+    text-align: right; /* Align text to the right */
+}
+
+.container {
+    position: relative;
+    width: 90%;
+    height: 85vh;
+    background-color: #fff;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+header {
+    background-color: #0056b3;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    font-size: 24px;
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    flex-wrap: wrap;
+}
+
+.search-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.search-input {
+    padding: 8px;
+    margin: 5px 0;
+    font-size: 16px;
+    width: 100%;
+    max-width: 300px;
+}
+
+.page-button {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.page-button:hover {
+    background-color: #0056b3;
+}
+
+.progress-bar {
+    width: 50%;
+    height: 10px;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+#progress-fill {
+    width: 0;
+    height: 100%;
+    background-color: #007BFF;
+    transition: width 0.5s;
+}
+
+#quran-book {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    margin: 20px 0;
+    perspective: 1000px; /* Adds depth to the page flip effect */
+}
+
+.page {
+    width: 48%;
+    height: 100%;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transform-origin: left center;
+    overflow-y: auto;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    font-size: 20px;
+    line-height: 2;
+    padding: 20px;
+    transition: transform 1s ease-in-out;
+}
+
+.page-left {
+    transform: rotateY(0deg);
+}
+
+.page-right {
+    transform: rotateY(0deg);
+}
+
+.page-flip-left {
+    transform: rotateY(-180deg); /* Flip left page */
+}
+
+.page-flip-right {
+    transform: rotateY(180deg); /* Flip right page */
+}
+
+.highlight {
+    background-color: yellow;
+    font-weight: bold;
+}
+
+.page-navigation {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.font-size-controls {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.select-surah {
+    padding: 8px;
+    margin: 5px 0;
+    font-size: 16px;
+    width: 100%;
+    max-width: 300px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Amiri', serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    direction: rtl; /* Right-to-left text direction */
+    text-align: right; /* Align text to the right */
+}
+
+.container {
+    position: relative;
+    width: 90%;
+    height: 85vh;
+    background-color: #fff;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+header {
+    background-color: #0056b3;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    font-size: 24px;
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    flex-wrap: wrap;
+}
+
+.search-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.search-input {
+    padding: 8px;
+    margin: 5px 0;
+    font-size: 16px;
+    width: 100%;
+    max-width: 300px;
+}
+
+.page-button {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.page-button:hover {
+    background-color: #0056b3;
+}
+
+.progress-bar {
+    width: 50%;
+    height: 10px;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+#progress-fill {
+    width: 0;
+    height: 100%;
+    background-color: #007BFF;
+    transition: width 0.5s;
+}
+
+#quran-book {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    margin: 20px 0;
+    perspective: 1000px; /* Adds depth to the page flip effect */
+}
+
+.page {
+    width: 48%;
+    height: 100%;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transform-origin: left center;
+    overflow-y: auto;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    font-size: 20px;
+    line-height: 2;
+    padding: 20px;
+    transition: transform 1s ease-in-out;
+}
+
+.page-left {
+    transform: rotateY(0deg);
+}
+
+.page-right {
+    transform: rotateY(0deg);
+}
+
+.page-flip-left {
+    transform: rotateY(-180deg); /* Flip left page */
+}
+
+.page-flip-right {
+    transform: rotateY(180deg); /* Flip right page */
+}
+
+.highlight {
+    background-color: yellow;
+    font-weight: bold;
+}
+
+.page-navigation {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.font-size-controls {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.select-surah {
+    padding: 8px;
+    margin: 5px 0;
+    font-size: 16px;
+    width: 100%;
+    max-width: 300px;
+}
+
+/* Font Size Control Buttons */
+#decrease-font, #increase-font {
+    padding: 8px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#decrease-font:hover, #increase-font:hover {
+    background-color: #0056b3;
+}
+
+/* Media Queries for Mobile */
+@media screen and (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    .container {
+        width: 100%;
+        height: auto;
+        box-shadow: none;
+        padding: 10px;
+    }
+
+    header {
+        font-size: 20px;
+        padding: 10px;
+    }
+
+    .navigation {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px 0;
+    }
+
+    .search-container {
+        width: 100%;
+    }
+
+    .search-input {
+        max-width: 100%;
+        font-size: 14px;
+    }
+
+    .page-button {
+        padding: 12px 15px;
+        font-size: 14px;
+        margin: 5px 0;
+    }
+
+    .page-navigation {
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+    }
+
+    #quran-book {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .page {
+        width: 100%;
+        height: auto;
+        padding: 15px;
+        font-size: 18px;
+        line-height: 1.8;
+    }
+
+    .page-flip-left,
+    .page-flip-right {
+        transform: rotateY(0deg); /* No flip effect for small screens */
+    }
+
+    .font-size-controls {
+        display: block;
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    .select-surah {
+        font-size: 14px;
+        max-width: 100%;
+    }
+
+    /* Font Size Control Buttons */
+    #decrease-font, #increase-font {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .page-button, .search-input, .font-size-controls button {
+        width: 100%;
+        font-size: 16px;
+        padding: 12px 0;
+    }
+
+    .page-navigation input {
+        width: 100%;
+        font-size: 16px;
+        margin-top: 10px;
+        padding: 10px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    header {
+        font-size: 18px;
+    }
+
+    .page-button {
+        font-size: 14px;
+        padding: 12px 10px;
+    }
+
+    .page {
+        font-size: 16px;
+        line-height: 1.6;
+    }
+
+    .search-input {
+        font-size: 12px;
+    }
+}
